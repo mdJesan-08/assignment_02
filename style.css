@@ -1,3 +1,167 @@
-body{
-    background-color: red;
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
+ /*<-- Navigation Bar start -->*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 200px;
+    background-color: #1A0B2E;
+    font-family: Arial, sans-serif;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav h1{
+    font-size: 24px;
+}
+
+nav h1 span{
+    background: linear-gradient(180deg, #9100F8, #FB09B4, #F7E93F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+#menu-toggle{
+    display: none;
+}
+
+.bar-icon{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar-icon span{
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+.nav-menu{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    gap: 32px;
+    margin-right: 80px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #FB09B4;
+}
+
+nav button{
+    padding: 12px 24px;
+    background: linear-gradient(190deg, #9100F8, #FB09B4, #F7E93F);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+nav button:hover{
+    transform: scale(1.05);
+}
+
+nav button img{
+    width: 20px;
+    height: 20px;
+}
+
+        /* Small Mobile */
+@media (max-width: 480px) {
+    nav{
+        padding: 12px 20px;
+        max-width: 480px;
+    }
+
+    nav h1{
+        font-size: 18px;
+    }
+
+    .nav-menu{
+        top: 50px;
+        padding: 20px;
+    }
+
+    .section1{
+        min-height: 350px;
+    }
+
+    .section1 .bckgi{
+        height: 350px;
+        min-height: 60vh;
+    }
+
+    .section1 h1{
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .section1 p{
+        font-size: 12px;
+        padding: 0 15px;
+        max-width: 95%;
+    }
+
+    .section1 .bckgi2{
+        width: 150px;
+        height: 150px;
+    }
+
+    .section1 .bckgi3{
+        width: 80px;
+        height: 80px;
+    }
+
+    .section1 .sec1n{
+        width: 35px;
+        height: 16px;
+        font-size: 10px;
+        transform: translate(-310px, 90px);
+    }
+
+    .section1 .btn .btn1,
+    .section1 .btn .btn2{
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .section1 .btn .btn1 img,
+    .section1 .btn .btn2 img{
+        width: 14px;
+        height: 14px;
+    }
+}
+
+ /*<-- Navigation Bar End -->*/
